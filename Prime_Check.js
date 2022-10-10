@@ -1,20 +1,39 @@
-import readlinesync from "readline-sync";
 
-function prime() {
-    let input = readlinesync.questionInt("Enter a digit:- ")
-   
-let chk=0;
-for(let i=2; i<input; i++)
-{
-  if(input%2==0)
-  {
-    chk++;
-    break;
+function prime(num){
+  if(num ==0 || num == 1 ){
+     return "not a prime"
   }
-}
-if(chk==0)
-  console.log(input + " is a Prime number");
-else
-  console.log(input + " is not a Prime Number");
-}
-prime();
+     for(let i=2;i<=num;i++){
+         if(num%2 ==0 ){
+          return  false;
+         }
+         else{
+             return true;
+         }
+     }
+
+  }
+  console.log(prime(5))
+ 
+  // -----------------------------------
+
+//   const lowerNumber = 2
+//   const higherNumber =100
+  
+//   console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+  
+//   for (let i = lowerNumber; i <= higherNumber; i++) {
+//       let flag = 0;
+  
+//       for (let j = 2; j < i; j++) {
+//           if (i % j == 0) {
+//               flag = 1;
+//               break;
+//           }
+//       }
+  
+//       if (i > 1 && flag == 0) {
+//           console.log(i);
+//       }
+//   }
+  

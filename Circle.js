@@ -26,9 +26,9 @@
     var radius =
     parseInt(document.getElementById('txtRadius').value);//String to Integer
 
-    if (0 < radius)
+    if (0 < radius){
         print("The circumference of the circle is " + (radius * 2 * Math.PI);
-    else
+     } else
         print("Error - radius must be a whole number greater than 0.");
     return false;
   }
